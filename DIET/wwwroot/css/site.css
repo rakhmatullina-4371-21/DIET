@@ -1,5 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿
 
 a.navbar-brand {
   white-space: normal;
@@ -46,6 +45,8 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+
+
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
@@ -69,3 +70,69 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
+
+
+
+
+
+.center {
+    /*    position: absolute;
+    top: 50%;
+    margin-top: -7em;*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.btn-style {
+    /*color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;*/
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 88px;
+    border: solid 1px #004F72;
+    font-weight: bold;
+    color: #123d3d;
+    background: #ffffff;
+}
+
+.gap-2 {
+    gap: .5rem !important;
+}
+
+.d-grid {
+    display: grid !important;
+}
+.g-5, .gy-5 {
+    --bs-gutter-x: 3rem;
+    --bs-gutter-y: 3rem;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+
+/*body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}*/

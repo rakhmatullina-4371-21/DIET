@@ -1,6 +1,34 @@
-﻿@{
+﻿@using DIET.Models
+@{
     ViewData["Title"] = "Home Page";
 }
-<div>
-<h1>Вход</h1>
-    </div>
+
+<div class="text-center" ; style="vertical-align: inherit;">
+    <form>
+        <h1 class="h3 mb-3 fw-normal"><font style="vertical-align: central;"><font style="vertical-align:central;"> Вход </font></font></h1>
+        <div class="form-floating">
+            <input type="email" ; class="w-25 form-control"  id="floatingInput"  style="margin: auto;" placeholder="name@example.com">
+            <label for="floatingInput"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Адрес электронной почты</font></font></label>
+        </div>
+        <div class="form-floating ">
+            <input type="password" ; style="margin: auto;" class="w-25 form-control" id="floatingPassword" placeholder="Пароль">
+            <label for="floatingPassword"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Пароль</font></font></label>
+        </div>
+        <div>
+            <button class="w-25 btn btn-lg btn-style" style="color:#57595B; background-color: #C7D2DB; border-color: #C7D2DB" ; name="inputButton"  type="submit"  onclick="Input()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; ">Войти</font></font></button>
+        </div>
+        <div>
+            <br />
+            <button class="w-25 btn btn-lg btn-primary" style="color:#57595B; background-color: #C7D2DB; border-color: #C7D2DB" ; type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; ">Регистрация</font></font></button>
+        </div>
+    </form>
+    @*<script>
+        function Input()
+        {
+            @Model( document.getElementById("floatingPassword").value)
+            if (document.getElementById("floatingPassword").value == "1") {
+                alert("m,.mnbvfghjkh");
+            } else alert("");
+        }
+    </script>*@
+</div>

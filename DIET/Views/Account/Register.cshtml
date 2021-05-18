@@ -1,0 +1,75 @@
+﻿@model DIET.ViewModels.RegisterModel
+
+
+
+<div class="center" style="width: 35%">
+    <div class="m-1">
+        <h1 style="text-align:center">Регистрация</h1>
+    </div>
+
+    <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+        <div class="m-3">
+            <div class="validation" asp-validation-summary="ModelOnly"></div>
+
+            <div class="form-floating m-1" style="text-align:center">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit; text-align:center">Фамилия </font></font></label>
+                <input type="text" ; style="margin: auto;" class="w-75 form-control" placeholder="Пароль">
+            </div>
+            <div class="form-floating m-1" style="text-align:center">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit; text-align:center">Имя </font></font></label>
+                <input type="text" ; style="margin: auto;" class="w-75 form-control" placeholder="Пароль">
+            </div>
+            <div class="form-floating m-1" style="text-align:center">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit; text-align:center"> Отчество </font></font></label>
+                <input type="text" ; style="margin: auto;" class="w-75 form-control" placeholder="Пароль">
+            </div>
+            <div class="form-floating m-1" style="text-align:center">
+                <label asp-for="Email"><font style="text-align:center">Адрес электронной почты</font></label>
+                <input type="email" ; class="w-75 form-control" asp-for="Email" id="floatingInput;" style="margin: auto;" placeholder="name@example.com">
+            </div>
+
+            <div class="form-floating m-1" style="text-align:center">
+                <label for="floatingPassword"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; text-align:center">Пароль</font></font></label>
+                <input type="password" ; style="margin: auto;" class="w-75 form-control" id="floatingPassword" placeholder="Пароль">
+            </div>
+
+            <div class="form-floating m-1" style="text-align:center">
+                <label for="ConfirmPassword"><font style="vertical-align: inherit;"><font style="vertical-align: inherit; text-align:center">Повторите пароль</font></font></label>
+                <input type="password" ; style="margin: auto;" class="w-75 form-control" id="floatingPassword" placeholder="Пароль">
+            </div>
+        </div>
+
+        <div class="form-group m-5" style="text-align:center">
+            <input type="submit" value="Регистрация" class="btn btn-style" />
+        </div>
+    </form>
+</div>
+
+
+
+
+@*<h2>Регистрация</h2>
+
+<form asp-action="Register" asp-controller="Account" asp-anti-forgery="true">
+    <div class="validation" asp-validation-summary="ModelOnly"></div>
+    <div>
+        <div >
+            <label asp-for="Email">Введите Email</label><br />
+            <input type="text" asp-for="Email" placeholder="name@example.com" />
+            <span asp-validation-for="Email" />
+        </div>
+        <div>
+            <label asp-for="Password">Введите пароль</label><br />
+            <input asp-for="Password" />
+            <span asp-validation-for="Password" />
+        </div>
+        <div>
+            <label asp-for="ConfirmPassword">Повторите пароль</label><br />
+            <input asp-for="ConfirmPassword" />
+            <span asp-validation-for="ConfirmPassword" />
+        </div>
+        <div>
+            <input type="submit" value="Регистрация" />
+        </div>
+    </div>
+</form>*@
